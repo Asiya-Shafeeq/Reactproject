@@ -1,0 +1,42 @@
+.womens{
+    padding: 3rem;
+}
+.womens .top{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.womens .top h1{
+    font-size: 30px;
+}
+.womens-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.womens .price-box{
+    display: none;
+}
+.womens .wishlist{
+    display: none;
+}
+
+@media screen and (max-width:980px) {
+    .womens-item{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 648px) {
+    .womens-item {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:480px){
+    .womens .top h1 {
+        font-size: 20px;
+    }
+    .womens-item{
+        grid-template-columns: 1fr;
+    }
+}

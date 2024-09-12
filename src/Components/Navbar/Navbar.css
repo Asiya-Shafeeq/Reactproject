@@ -1,0 +1,119 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+.navmenu{
+    display: flex;
+    gap: 2rem;
+}
+.navmenu li a {
+    color: #807D7E;
+    cursor: pointer;
+}
+.navmenu li a:hover{
+    color: #3C4242;
+}
+.navmenu hr{
+    margin-top: 10px;
+    border: none;
+    width:100% ;
+    height: 3px;
+    border-radius: 10px;
+    background-color: black;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #F6F6F6;
+    padding: 3px 5px;
+    border-radius: 5px;
+    width: 30%;
+}
+input{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+.icons li{
+    background-color: #F6F6F6;
+    padding: 8px;
+    border-radius: 5px;
+}
+.toogle{
+    display: none;
+    order: 1;
+}
+.toogle i{
+    font-size: 30px;
+    color: #807D7E;
+}
+@media screen and (max-width:1280px) {
+    .navmenu{
+        gap: 1.5rem;
+    }
+    .navmenu li a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .navmenu{
+        display: none;
+    }
+    .toogle{
+        display: block;
+    }
+    .small{
+        position: absolute;
+        top: 13vh;
+        left: 0;
+        height: 50vh;
+        width: 100%;
+        background-color:#fff ;
+        padding: 20px;
+        text-align: center;
+    }
+    .small hr{
+        display: none;
+    }
+    .small li a{
+        margin-bottom: 1rem;
+        display: block;
+    }
+    .search-bar{
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px) {
+    .search-bar{
+        width: 45%;
+    }
+}
+@media screen and (max-width:648px) {
+    .navbar .icons{
+        display: none;
+    }
+    .search-bar{
+        width: 55%;
+    }
+}
+@media screen and (max-width:540px){
+    .search-bar {
+        width: 60%;
+    }
+}
+@media screen and (max-width:480px){
+    .search-bar{
+        display: none;
+    }
+}

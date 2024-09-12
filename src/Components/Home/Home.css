@@ -1,0 +1,91 @@
+.home{
+    background-image: url(../Assets/bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 3rem 8rem 3rem;
+}
+.right_arrow{
+    transform: rotate(180deg)
+}
+.content{
+    margin-right:30rem ;
+}
+.content h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+.content h1{
+    color: #fff;
+    font-size: 75px;
+}
+.home button{
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 10px 50px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+@media screen and (max-width:1280px) {
+    .content{
+        margin-right: 20rem;
+    }
+}
+@media screen and (max-width: 1080px){
+    .content h1{
+        font-size: 65px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .content h1{
+        font-size: 40px;
+        margin-bottom: 1rem;
+    }
+    .content h3{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content{
+        margin-right: 10rem;
+    }
+}@media screen and (max-width:648px){
+    .home .arrow ,.right_arrow{
+        display: block;
+        width: 2%;
+    }
+    .home button{
+        padding: 5px 40px;
+    }
+    .content {
+        margin-right: 5rem;
+    }
+}
+@media screen and (max-width:540px) {
+    .content h1{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .content h3{
+        font-size: 15px;
+         margin-bottom: 10px;
+    }
+    .home button {
+        padding: 7px 40px;
+        font-size: 13px;
+    }
+    .home{
+        padding: 5rem 3rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .home {
+        padding: 5rem 1rem;
+    }
+}
